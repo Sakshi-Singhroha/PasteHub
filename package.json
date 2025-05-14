@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "lucide-react": "^0.510.0",
+    "react-hot-toast": "^2.5.2"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "scripts": {
+  "build": "vite build",
+  "dev": "vite",
+  "serve": "vite preview"
+}
+}
+
