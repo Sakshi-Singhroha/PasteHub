@@ -50,7 +50,7 @@
 
 
 
- 
+
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -59,6 +59,10 @@ import Navbar     from './components/navbar';
 import Home       from './components/home';
 import Pastes     from './components/pastes';
 import ViewPastes from './components/viewpaste';
+
+
+
+
 
 const router = createBrowserRouter([
   {
@@ -93,9 +97,12 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div>
+      
       <RouterProvider router={router} />
     </div>
   );
 }
 
 export default App;
+
+ 

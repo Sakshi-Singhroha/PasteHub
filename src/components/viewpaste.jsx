@@ -67,13 +67,16 @@ const ViewPaste = () => {
 
     return (
         // <div className="min-h-screen bg-[#18181b] flex flex-col items-center pt-8">
-            <div className="w-full  mt-6  max-w-3xl rounded-2xl bg-[#232329] shadow-lg border border-[#35353b]">
+            <div className="w-full  max-w-3xl rounded-2xl bg-[#232329] shadow-lg border border-green-400">
                 {/* Window header with circles and copy button */}
-                <div className=" flex items-center justify-between px-4 py-2 border-b border-[#35353b] rounded-t-2xl bg-[#232329]">
+                <div className=" flex items-center justify-between gap-5 px-4 py-2 border-b border-green-200 rounded-t-2xl bg-[#232329]">
                     <div className="flex space-x-2">
                         <span className="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
                         <span className="w-3 h-3 rounded-full bg-yellow-400 inline-block"></span>
                         <span className="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+                    </div>
+                    <div className="w-full flex justify-center py-4">
+                    <span className="text-white text-xl font-semibold">{paste.title}</span>
                     </div>
                     <button
                         className="p-2 hover:bg-[#35353b] rounded-lg transition"
@@ -84,9 +87,7 @@ const ViewPaste = () => {
                     </button>
                 </div>
                 {/* Title centered */}
-                <div className="w-full flex justify-center py-4">
-                    <span className="text-white text-xl font-semibold">{paste.title}</span>
-                </div>
+                
                 {/* Code Content */}
                 <pre className="bg-[#232329] text-gray-200 font-mono text-sm px-6 py-4 rounded-b-2xl overflow-x-auto whitespace-pre-wrap min-h-[300px]">
                     {paste.content}
@@ -97,3 +98,7 @@ const ViewPaste = () => {
 };
 
 export default ViewPaste;
+
+
+
+

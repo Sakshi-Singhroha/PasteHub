@@ -56,3 +56,17 @@ export const  pasteSlice = createSlice({
 export const { addToPastes, updateToPastes, resetAllPastes,removeFromPastes } = pasteSlice.actions
 
 export default pasteSlice.reducer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
